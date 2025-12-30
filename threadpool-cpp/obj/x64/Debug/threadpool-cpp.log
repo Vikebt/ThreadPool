@@ -1,0 +1,18 @@
+﻿  正在清理远程项目目录
+  正在验证源
+  正在将源远程复制到“192.168.117.131”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  main.cpp
+  TaskQueue.cpp
+  ThreadPool.cpp
+C:\Users\Vikebt\source\repos\threadpool-cpp\ThreadPool.cpp(159,15): warning : deleting ‘void*’ is undefined [-Wdelete-incomplete]
+C:\Users\Vikebt\source\repos\threadpool-cpp\ThreadPool.cpp(159,15): warning :   159 |   delete task.arg; // ����arg�Ƕ��ڴ棬���ͷţ��������ύ�߷��䣩
+C:\Users\Vikebt\source\repos\threadpool-cpp\ThreadPool.cpp(159,15): warning :       |               ^~~
+C:\Users\Vikebt\source\repos\threadpool-cpp\ThreadPool.cpp(183,44): warning : conversion from ‘size_t’ {aka ‘long unsigned int’} to ‘int’ may change value [-Wconversion]
+C:\Users\Vikebt\source\repos\threadpool-cpp\ThreadPool.cpp(183,44): warning :   183 |   int queueSize = pool->m_taskQ->taskNumber(); // ��ǰ���߳���
+C:\Users\Vikebt\source\repos\threadpool-cpp\ThreadPool.cpp(183,44): warning :       |                   ~~~~~~~~~~~~~~~~~~~~~~~~~^~
+  正在链接对象
+  threadpool-cpp.vcxproj -> C:\Users\Vikebt\source\repos\threadpool-cpp\bin\x64\Debug\threadpool-cpp.out

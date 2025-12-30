@@ -1,0 +1,42 @@
+﻿#include "TaskQueue.h"
+#include <pthread.h>
+
+// 构造函数：初始化互斥锁
+TaskQueue::TaskQueue()
+{
+	pthread_mutex_init(&m_mutex, nullptr);
+}
+// 析构函数：销毁互斥锁（遵循RAII思想，管理资源生命周期）
+TaskQueue::~TaskQueue()
+{
+	pthread_mutex_destroy(&m_mutex);
+}
+// 添加任务实现（加锁 -> 操作 -> 解锁的标准范式）
+void TaskQueue::addTask(const Task& task)
+{
+	pthread_mutex_lock(&m_mutex);
+	m_Task.push(task);
+	pthread_mutex_unlock(&m_mutex);
+
+}
+void TaskQueue::addTask(callback func, void* arg)
+{
+	pthread_mutex_lock(&m_mutex);
+	m_Task.push(Task(func,arg));
+	pthread_mutex_unlock(&m_mutex);
+}
+// 取出任务：注意返回的是Task的副本，确保调用者得到独立对象
+Task TaskQueue::takeTask()
+{
+	Task t;
+	pthread_mutex_lock(&m_mutex);
+	if (!m_Task.empty())
+	{
+		t = m_Task.front(); // 复制
+		m_Task.pop(); // 出栈
+	}
+	// 如果队列为空，返回的是一个空的Task对象（function为nullptr）
+	pthread_mutex_unlock(&m_mutex);
+	// 返回局部对象的副本
+	return t;
+}

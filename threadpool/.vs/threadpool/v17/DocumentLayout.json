@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Vikebt\\source\\repos\\threadpool\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{93735C63-484F-430A-BC32-6F9A76DF510D}|threadpool.vcxproj|C:\\Users\\Vikebt\\source\\repos\\threadpool\\threadpool.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{93735C63-484F-430A-BC32-6F9A76DF510D}|threadpool.vcxproj|solutionrelative:threadpool.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93735C63-484F-430A-BC32-6F9A76DF510D}|threadpool.vcxproj|C:\\Users\\Vikebt\\source\\repos\\threadpool\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{93735C63-484F-430A-BC32-6F9A76DF510D}|threadpool.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93735C63-484F-430A-BC32-6F9A76DF510D}|threadpool.vcxproj|C:\\Users\\Vikebt\\source\\repos\\threadpool\\threadpool.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{93735C63-484F-430A-BC32-6F9A76DF510D}|threadpool.vcxproj|solutionrelative:threadpool.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:283709:0:{1a46fd64-28d5-0019-8eb3-17a02d419b53}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.c",
+              "DocumentMoniker": "C:\\Users\\Vikebt\\source\\repos\\threadpool\\main.c",
+              "RelativeDocumentMoniker": "main.c",
+              "ToolTip": "C:\\Users\\Vikebt\\source\\repos\\threadpool\\main.c",
+              "RelativeToolTip": "main.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-11-29T07:53:58.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "threadpool.c",
+              "DocumentMoniker": "C:\\Users\\Vikebt\\source\\repos\\threadpool\\threadpool.c",
+              "RelativeDocumentMoniker": "threadpool.c",
+              "ToolTip": "C:\\Users\\Vikebt\\source\\repos\\threadpool\\threadpool.c",
+              "RelativeToolTip": "threadpool.c",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAswDMBAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-11-27T07:59:12.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "threadpool.h",
+              "DocumentMoniker": "C:\\Users\\Vikebt\\source\\repos\\threadpool\\threadpool.h",
+              "RelativeDocumentMoniker": "threadpool.h",
+              "ToolTip": "C:\\Users\\Vikebt\\source\\repos\\threadpool\\threadpool.h",
+              "RelativeToolTip": "threadpool.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-27T07:59:29.691Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

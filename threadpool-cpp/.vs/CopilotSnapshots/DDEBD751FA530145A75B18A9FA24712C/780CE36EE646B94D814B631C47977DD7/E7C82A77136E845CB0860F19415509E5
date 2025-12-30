@@ -1,0 +1,36 @@
+﻿#include "TaskQueue.h"
+#include <mutex>
+
+// 构造函数：无需手动初始化std::mutex
+TaskQueue::TaskQueue()
+{
+}
+// 析构函数：无需手动销毁std::mutex
+TaskQueue::~TaskQueue()
+{
+}
+// 添加任务实现（加锁 -> 操作 -> 解锁的标准范式）
+void TaskQueue::addTask(const Task& task)
+{
+	std::lock_guard<std::mutex> lock(m_mutex);
+	m_Task.push(task);
+}
+void TaskQueue::addTask(callback func, void* arg)
+{
+	std::lock_guard<std::mutex> lock(m_mutex);
+	m_Task.push(Task(func,arg));
+}
+// 取出任务：注意返回的是Task的副本，确保调用者得到独立对象
+Task TaskQueue::takeTask()
+{
+	Task t;
+	{
+		std::lock_guard<std::mutex> lock(m_mutex);
+		if (!m_Task.empty())
+		{
+			t = m_Task.front(); // 复制
+			m_Task.pop(); // 出栈
+		}
+	}
+	return t;
+}

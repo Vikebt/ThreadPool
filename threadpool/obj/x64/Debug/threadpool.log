@@ -1,0 +1,19 @@
+﻿  正在验证源
+  正在将源远程复制到“192.168.117.131”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  main.c
+  threadpool.c
+C:\Users\Vikebt\source\repos\threadpool\threadpool.c(54,58): warning : conversion to ‘long unsigned int’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+C:\Users\Vikebt\source\repos\threadpool\threadpool.c(54,58): warning :    54 |   pool->workerIDs = (pthread_t*)malloc(sizeof(pthread_t) * max);
+C:\Users\Vikebt\source\repos\threadpool\threadpool.c(54,58): warning :       |                                                          ^
+C:\Users\Vikebt\source\repos\threadpool\threadpool.c(61,48): warning : conversion to ‘long unsigned int’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+C:\Users\Vikebt\source\repos\threadpool\threadpool.c(61,48): warning :    61 |   memset(pool->workerIDs, 0, sizeof(pthread_t) * max);
+C:\Users\Vikebt\source\repos\threadpool\threadpool.c(61,48): warning :       |                                                ^
+C:\Users\Vikebt\source\repos\threadpool\threadpool.c(79,48): warning : conversion to ‘long unsigned int’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+C:\Users\Vikebt\source\repos\threadpool\threadpool.c(79,48): warning :    79 |   pool->taskQueue = (Task*)malloc(sizeof(Task) * queueSize);
+C:\Users\Vikebt\source\repos\threadpool\threadpool.c(79,48): warning :       |                                                ^
+  正在链接对象
+  threadpool.vcxproj -> C:\Users\Vikebt\source\repos\threadpool\bin\x64\Debug\threadpool.out
